@@ -1,5 +1,6 @@
 var connected = false;
 
+// var socket = io("https:localhost:3003")
 var socket = io("https://the-twits.herokuapp.com/")
 socket.emit("setup", userLoggedIn);
 
