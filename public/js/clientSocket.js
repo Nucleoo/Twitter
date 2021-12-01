@@ -1,7 +1,7 @@
 var connected = false;
 
-// var socket = io("https:localhost:3003")
-var socket = io("https://twit-app.herokuapp.com/")
+var socket = io("https:localhost:3003")
+// var socket = io("https://twit-app.herokuapp.com/")
 socket.emit("setup", userLoggedIn);
 
 socket.on("connected", () => connected = true);
